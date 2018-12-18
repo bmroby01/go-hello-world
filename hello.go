@@ -1,6 +1,9 @@
 package main
 
 import "fmt"
+import "math"
+
+const s string = "constant"
 
 func main() {
   fmt.Println("Hello, World!")
@@ -26,4 +29,15 @@ func main() {
 
   f := "short"
   fmt.Println(f)
+
+  fmt.Println(s)
+
+  const n = 500000000
+
+  const number = 3e20 / n
+  fmt.Println(number)
+
+  fmt.Println(int64(number))
+
+  fmt.Println(math.Sin(n))
 }
